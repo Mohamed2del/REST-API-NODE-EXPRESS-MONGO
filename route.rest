@@ -1,0 +1,26 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5d64b6a5fccf11116846532f
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "cacxza",
+    "subscribedToChannel": "Wcebw Devs"
+}
+
+###
+DELETE  http://localhost:3000/subscribers/5d64b958bebe3227c4ffa316
+
+
+###
+PATCH   http://localhost:3000/subscribers/5d64b6a5fccf11116846532f
+Content-Type: application/json
+{
+    "name" : "New Name",
+    
+}
